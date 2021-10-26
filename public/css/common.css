@@ -1,0 +1,26 @@
+.container {
+    margin: 50px 0 0 0;
+}
+.home, 
+.login {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+.title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #0089ff;
+}
+.home ul {
+    width: 100%;
+    padding: 0 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #0089ff;
+}
+.home ul li {
+    width: 30%;
+    display: inline-flex;
+}
