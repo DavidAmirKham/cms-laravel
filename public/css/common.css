@@ -2,17 +2,30 @@
     margin: 50px 0 0 0;
 }
 .home, 
-.login {
+.login,
+.news {
     width: 400px;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid #eee;
+}
+.news {
+    width: 900px;
+    min-height: 200px;
 }
 .title {
     font-size: 2rem;
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 1px solid #0089ff;
+}
+.nav {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.news-title {
+    font-size: 1.3rem;
+    display: inline-block;
 }
 .home ul {
     width: 100%;
@@ -23,4 +36,93 @@
 .home ul li {
     width: 30%;
     display: inline-flex;
+}
+.main {
+    display: flex;
+}
+.sidebar {
+    width: 30%;
+    border-right: 1px solid #eee;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    padding: 5px;
+}
+.text-center {
+    text-align: center;
+}
+.float-right {
+    float: right;
+}
+.search-bar {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.search-text {
+    width: 200px;
+    height: 30px;
+    text-indent: 5px;
+}
+.search-button {
+    width: 100px;
+    height: 30px;
+    margin-left: -5px;
+}
+.news table td {
+    padding: 5px 0;
+}
+.news table td.left {
+    width: 30%;
+}
+.news input[type="text"] {
+    width: 200px;
+    height: 30px;
+    text-indent: 5px;
+}
+.news textarea {
+    width: 200px;
+    resize: vertical;
+    text-indent: 5px;
+}
+.news input[type="submit"] {
+    width: 100px;
+    height: 30px;
+}
+.errors {
+    color: #ff0000;
+}
+.success {
+    padding: 10px 0;
+    background: #008000;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.danger {
+    padding: 10px 0;
+    background: #ff0000;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.edit {
+    color: #008000;
+}
+.delete {
+    color: #ff0000;
+}
+ul.pagination {
+    text-align: center;
+}
+ul.pagination li {
+    display: inline-block;
+    list-style: none;
+}
+ul.pagination li a{
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 35px;
+}
+ul.pagination li a:hover {
+    background: #eee;
 }

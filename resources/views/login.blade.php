@@ -2,7 +2,9 @@
 
 @section('content')
     <div class="login">
-    <p class="title">CMS Login</p>
+        <div>
+            <p class="title">CMS Login</p>
+        </div>
         <table>
             <tr>
                 <td>ID/Mail address</td>

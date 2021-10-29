@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\NewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +24,24 @@ Route::get('/home', function() {
 Route::get('/login', function() {
     return view('login');
 });
+
+Route::get('/news', function() {
+    return view('news');
+});
+
+Route::get('/news_list', function() {
+    return view('news_list', ['search_text' => '']);
+});
+
+Route::get('/search_news', [NewsController::class, 'search_news']);
+
+Route::get('/news_add', [NewsController::class, 'news_add']);
+
+Route::post('/news_insert', [NewsController::class, 'news_insert']);
+
+Route::get('/news_edit/{id}', [NewsController::class, 'news_edit']);
+
+Route::post('/news_update/{id}', [NewsController::class, 'news_update']);
+
+
+Route::get('/news_delete/{id}/{search_text?}', [NewsController::class, 'news_delete']);
