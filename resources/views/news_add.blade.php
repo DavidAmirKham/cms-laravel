@@ -21,15 +21,12 @@
         @if (isset($success))
             <div class="success text-center">{{ $success }}</div>
         @endif
-        @if (isset($fail))
-            <div class="danger text-center">{{ $fail }}</div>
-        @endif
         <form action="{{ isset($data->id) ? '/news_update/'.$data->id : '/news_insert' }}" method="POST" >
             @csrf
             <table>
                 <tr>
                     <td class="left">ID</td>
-                    <td><input type="text" name="id" value="{{ isset($id) ? $id:$data->id }}" readonly/></td>
+                    <td><input type="text" name="id" class="border-none" value="{{ isset($id) ? $id:$data->id }}" readonly/></td>
                 </tr>
                 <tr>
                     <td class="left">PUBLISH FROM</td>

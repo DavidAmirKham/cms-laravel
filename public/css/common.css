@@ -70,13 +70,14 @@
     height: 30px;
     margin-left: -5px;
 }
-.news table td {
+table td {
     padding: 5px 0;
 }
-.news table td.left {
+table td.left {
     width: 30%;
 }
-.news input[type="text"] {
+input[type="text"],
+input[type="password"] {
     width: 200px;
     height: 30px;
     text-indent: 5px;
@@ -86,7 +87,7 @@
     resize: vertical;
     text-indent: 5px;
 }
-.news input[type="submit"] {
+input[type="submit"] {
     width: 100px;
     height: 30px;
 }
@@ -125,4 +126,7 @@ ul.pagination li a{
 }
 ul.pagination li a:hover {
     background: #eee;
+}
+.border-none {
+    border: none;
 }

@@ -4,7 +4,7 @@
     <div class="news">
         <div class="nav">
             <p class="news-title">CMS Login</p>
-            <p class="float-right">{{ Session::get('ID') }}</p>
+            <p class="float-right">{{ Session::get('id_or_mail') }}</p>
         </div>
         <div class="main">
             <div class="sidebar">
