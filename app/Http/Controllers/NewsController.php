@@ -57,10 +57,6 @@ class NewsController extends Controller
             ->withInput()
             ->with(['errors' => $validator->errors()]);
         }
-        // $response = Http::post($this->apiUrl . 'login', [
-        //     'id_or_email' => $request['id_or_email'],
-        //     'password' => $request['password'],
-        // ]);
         if (($request['id_or_mail'] == 'admin' || $request['id_or_mail'] == 'admin@gmail.com') && $request['password'] == 'P@ssword1234') {
             Session::put('id_or_mail', 'admin');
             return redirect('/news_list');
